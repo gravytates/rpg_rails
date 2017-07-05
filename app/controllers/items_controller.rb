@@ -1,14 +1,21 @@
 class ItemsController < ApplicationController
+  before_action :only => [:new, :edit] do
+    redirect_to new_user_session_path unless current_user && current_user.admin
+  end
 
   def new
     @item = Item.new
   end
 
+  def index
+    @items = Item.all
+    @user_item = current_user.user_items.new 
+  end
+
   def create
-    @user = current_user
     @item = Item.new(item_params)
     if @item.save
-      redirect_to "/user/#{@user.id}"
+      redirect_to "/items"
     else
       flash[:alert] = "There was a problem creating the item"
       render :new

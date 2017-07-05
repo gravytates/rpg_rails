@@ -12,3 +12,7 @@
 <%= image_tag "#{current_user.avatar}" %>
 
 <%= link_to "Delete Avatar", :sort_by => 'delete' %>
+
+<% if current_user && current_user.admin %>
+  <%= link_to "Add item", new_item_path %>
+<% end %>

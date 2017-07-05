@@ -1,0 +1,9 @@
+<%= form_for [@item] do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :user_attack_increase %>
+  <%= f.number_field :user_attack_increase %>
+  <%= f.label :one_time_attack %>
+  <%= f.number_field :one_time_attack %>
+  <p><%= f.submit %></p>
+<% end %>
