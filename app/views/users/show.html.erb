@@ -1,1 +1,7 @@
 <h1>test</h1>
+
+<% if current_user %>
+            <p>
+              User: <%= current_user.email %> | <%= link_to "Sign out", destroy_user_session_path, method: 'delete' %> | <%= link_to "Home", root_path %>
+            </p>
+          <% end %>
