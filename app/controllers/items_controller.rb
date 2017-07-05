@@ -9,7 +9,7 @@ class ItemsController < ApplicationController
 
   def index
     @items = Item.all
-    @user_item = current_user.user_items.new 
+    # @user_item = current_user.user_items.new(item_params)
   end
 
   def create
@@ -21,29 +21,29 @@ class ItemsController < ApplicationController
       render :new
     end
   end
-
-  def edit
-    @item = Item.find(params[:id])
-  end
-
-  def update
-    @user = current_user
-    @item = Item.update(item_params)
-    if @item.save
-      redirect_to "/user/#{@user.id}"
-    else
-      flash[:alert] = "There was a problem updating the item"
-      render :edit
-    end
-  end
-
-  def destroy
-  @item = Item.find(params[:id])
-  if @item.destroy
-    flash[:notice] = "Product successfully removed!"
-    redirect_to items_path
-  end
-end
+#
+#   def edit
+#     @item = Item.find(params[:id])
+#   end
+#
+#   def update
+#     @user = current_user
+#     @item = Item.update(item_params)
+#     if @item.save
+#       redirect_to "/user/#{@user.id}"
+#     else
+#       flash[:alert] = "There was a problem updating the item"
+#       render :edit
+#     end
+#   end
+#
+#   def destroy
+#   @item = Item.find(params[:id])
+#   if @item.destroy
+#     flash[:notice] = "Product successfully removed!"
+#     redirect_to items_path
+#   end
+# end
 
 private
 
