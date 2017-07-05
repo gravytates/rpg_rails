@@ -10,3 +10,5 @@
 <h3>Name : <%= current_user.name %></h3>
 <h3>Attack Level : <%= current_user.attack_level %></h3>
 <%= image_tag "#{current_user.avatar}" %>
+
+<%= link_to "Delete Avatar", :sort_by => 'delete' %>

@@ -5,7 +5,7 @@ class ItemsController < ApplicationController
   end
 
   def create
-    @user = User.find(params[:user_id])
+    @user = current_user
     @item = Item.new(item_params)
     if @item.save
       redirect_to "/user/#{@user.id}"
@@ -20,7 +20,7 @@ class ItemsController < ApplicationController
   end
 
   def update
-    @user = User.find(params[:user_id])
+    @user = current_user
     @item = Item.update(item_params)
     if @item.save
       redirect_to "/user/#{@user.id}"
