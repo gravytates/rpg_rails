@@ -23,6 +23,15 @@
 <% end %>
 <br>
 
-   <% @user_items.each do |item| %>
+<% if @user_items.any? %>
+  <% @user_items.each do |item| %>
     <p> <%= item.name %></p>
-   <% end %>
+    <p> Attack Level Increase: <%= item.user_attack_increase %></p>
+    <p> One Time Attack (consumes item): <%= item.one_time_attack %></p>
+    <hr>
+  <% end %>
+<% else %>
+  <p>
+    This user has no items in their inventory yet.
+  </p>
+<% end %>

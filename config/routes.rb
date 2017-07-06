@@ -4,6 +4,8 @@ Rails.application.routes.draw do
     resources :user_items
   end
 
+  resources :user_items
+
   resources :items do
     resources :user_items
   end

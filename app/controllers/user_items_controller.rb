@@ -12,6 +12,6 @@ class UserItemsController < ApplicationController
   private
 
   def item_params
-    params.require(:user_item).permit(:item_id)
+    params.require(:user_item).permit(:name, :user_attack_increase, :one_time_attack, :item_id)
   end
 end

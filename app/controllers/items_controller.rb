@@ -10,14 +10,13 @@ class ItemsController < ApplicationController
   def index
     @items = Item.all
     # binding.pry
-    # @user_item = current_user.user_items.new 
+    @user_item = current_user.user_items.new
   end
 
   def create
     @item = Item.new(item_params)
-    # @user_item = current_user.user_items.new
     if @item.save
-      redirect_to "/items"
+      redirect_to items_path
     else
       flash[:alert] = "There was a problem creating the item"
       render :new
