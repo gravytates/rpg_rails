@@ -10,10 +10,6 @@ class ApplicationController < ActionController::Base
     user_path(current_user) #your path
   end
 
-  def after_sign_out_path_for(admins)
-    new_user_session_path
-  end
-
   protected
 
   def configure_permitted_parameters
