@@ -1,4 +1,4 @@
-class Users_Items < ApplicationRecord
+class UserItem < ApplicationRecord
   belongs_to :user
   belongs_to :item
 end

@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :users do
-    resources :items_users
+    resources :user_items
   end
 
   resources :items do
-    resources :items_users
+    resources :user_items
   end
 
   root to: "home#index"

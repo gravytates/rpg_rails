@@ -10,9 +10,19 @@
 <h3>Name : <%= current_user.name %></h3>
 <h3>Attack Level : <%= current_user.attack_level %></h3>
 <%= image_tag "#{current_user.avatar}" %>
+<br>
 
 <%= link_to "Delete Avatar", :sort_by => 'delete' %>
+<br>
+
+<%= link_to "View All Items", items_path %>
+<br>
 
 <% if current_user && current_user.admin %>
   <%= link_to "Add item", new_item_path %>
 <% end %>
+<br>
+
+  <% @user_items.each do |item| %>
+    <p><%= item.name %></p>
+  <% end %>

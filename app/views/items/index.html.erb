@@ -1,6 +1,6 @@
 <% @items.each do |item| %>
  <p><%= item.name %>
-   <%= form_for [@user_item, item] do |f| %>
+   <%= form_for @user_item do |f| %>
      <%= f.hidden_field :item_id, value: item.id %>
      <%= f.submit "Add to Inventory" %>
    <% end %>
