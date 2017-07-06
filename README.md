@@ -65,6 +65,10 @@ This application includes both Unit and User Integration testing.  It primarily 
 
 ![character](https://user-images.githubusercontent.com/25161777/27936734-3023c4b2-6267-11e7-94e1-1080cda1e950.png)
 
+### Test Coverage
+
+![tests](https://user-images.githubusercontent.com/25161777/27937072-74ec5742-6269-11e7-8f31-d0090f5564ec.png)
+
 
 ## Authors
 
