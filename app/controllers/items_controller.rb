@@ -9,11 +9,13 @@ class ItemsController < ApplicationController
 
   def index
     @items = Item.all
-    @user_item = current_user.user_items.new
+    # binding.pry
+    # @user_item = current_user.user_items.new 
   end
 
   def create
     @item = Item.new(item_params)
+    # @user_item = current_user.user_items.new
     if @item.save
       redirect_to "/items"
     else
