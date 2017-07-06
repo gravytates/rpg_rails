@@ -9,7 +9,9 @@
 <h3>Role : <%= current_user.role %></h3>
 <h3>Name : <%= current_user.name %></h3>
 <h3>Attack Level : <%= current_user.attack_level_math %></h3>
+
 <%= image_tag "#{current_user.avatar}" %>
+
 <br>
 
 <%= link_to "Delete Avatar", :sort_by => 'delete' %>
@@ -27,7 +29,7 @@
 
 <% if @user_items.any? %>
   <% @user_items.each do |item| %>
-    <p> <%= item.name %></p>
+    <h4> <%= item.name %></h4>
     <p> Attack Level Increase: <%= item.user_attack_increase %></p>
     <p> One Time Attack (consumes item): <%= item.one_time_attack %></p>
     <hr>

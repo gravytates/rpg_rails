@@ -22,7 +22,7 @@ FactoryGirl.define do
 
 
   factory(:item) do
-    name('sword')
+    name('PickAxe')
     user_attack_increase(10)
     one_time_attack(50)
   end

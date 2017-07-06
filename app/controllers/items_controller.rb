@@ -23,29 +23,29 @@ class ItemsController < ApplicationController
     end
   end
 #
-  def edit
-    @item = Item.find(params[:id])
-  end
-
-  def update
-    @user = current_user
-    @item = Item.find(params[:id])
-    @item.update(item_params)
-    if @item.save
-      redirect_to "/users/#{@user.id}"
-    else
-      flash[:alert] = "There was a problem updating the item"
-      render :edit
-    end
-  end
-
-  def destroy
-    @item = Item.find(params[:id])
-    if @item.destroy
-      flash[:notice] = "Product successfully removed!"
-      redirect_to items_path
-    end
-  end
+  # def edit
+  #   @item = Item.find(params[:id])
+  # end
+  #
+  # def update
+  #   @user = current_user
+  #   @item = Item.find(params[:id])
+  #   @item.update(item_params)
+  #   if @item.save
+  #     redirect_to "/users/#{@user.id}"
+  #   else
+  #     flash[:alert] = "There was a problem updating the item"
+  #     render :edit
+  #   end
+  # end
+  #
+  # def destroy
+  #   @item = Item.find(params[:id])
+  #   if @item.destroy
+  #     flash[:notice] = "Product successfully removed!"
+  #     redirect_to items_path
+  #   end
+  # end
 
 private
 
