@@ -1,24 +1,45 @@
-# README
+# RPG-Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##Prerequisites
 
-Things you may want to cover:
+Web browser with ES6 compatibility
+Examples: Chrome, Safari
 
-* Ruby version
+Web browser with ES6 compatibility
+Examples: Chrome, Safari
 
-* System dependencies
+### Installing
 
-* Configuration
+Clone this repo by typing into the terminal:
+```
+$ git clone https://github.com/gravytates/rpg_rails.git
+```
 
-* Database creation
+In a new terminal window, start postgres in the background:
+```
+$ postgres
+```
+Ensure you are using Ruby 2.4.1 by typing:
+```
+$ ruby -v
+```
 
-* Database initialization
+If you are not running version 2.4.1 please look into a Ruby version manager. I suggest RVM or Chruby.
 
-* How to run the test suite
+Navigate to this project directory in the terminal. Then type:
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+$ bundle install
+```
 
-* Deployment instructions
+After the gems are installed set up the database:
 
-* ...
+```
+$ bundle exec rails db:setup
+```
+
+To run the app:
+```
+$ bundle exec rails server
+```
+If all went well, rails will now make this project available in your browser by going to localhost:3000.
