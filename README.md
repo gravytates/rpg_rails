@@ -44,6 +44,14 @@ $ bundle exec rails server
 ```
 If all went well, rails will now make this project available in your browser by going to localhost:3000.
 
+To log in as admin, provided credentials are:
+```
+email: admin2@admin2
+```
+```
+password: 123456
+```
+
 ### Testing
 
 This application includes both Unit and User Integration testing.  It primarily uses RSpec, Capybara, and Shoulda-Matchers.
