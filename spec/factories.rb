@@ -6,8 +6,9 @@ FactoryGirl.define do
     avatar(nil)
     attack_level(0)
     email('Rick@Rick')
+    password 123456
   end
-  
+
   factory(:item) do
     name('sword')
     user_attack_increase(10)
