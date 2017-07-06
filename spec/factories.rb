@@ -7,4 +7,10 @@ FactoryGirl.define do
     attack_level(0)
     email('Rick@Rick')
   end
+  
+  factory(:item) do
+    name('sword')
+    user_attack_increase(10)
+    one_time_attack(50)
+  end
 end
