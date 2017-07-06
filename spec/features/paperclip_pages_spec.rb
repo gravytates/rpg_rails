@@ -7,6 +7,6 @@ describe "add items to rpg and inventory" do
     login_as(user, :scope => :user)
     visit user_path(user)
     click_link 'Delete Avatar'
-    expect(page).to have_content 'Missing'
+    expect(page).to have_content 'No avatar image uploaded'
   end
 end
