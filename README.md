@@ -1,6 +1,9 @@
-# RPG-Rails
+# _Wild West Space Grime_
 
-##Prerequisites
+
+This is a website for space cowboys. Built in rails, this site features Devise authentication for users and admins, simpleCov, factory girl, and validations. The database is seeded with an admin account. This site is great.
+
+## Prerequisites
 
 Web browser with ES6 compatibility
 Examples: Chrome, Safari
@@ -61,3 +64,44 @@ This application includes both Unit and User Integration testing.  It primarily 
 ### Character Page
 
 ![character](https://user-images.githubusercontent.com/25161777/27936734-3023c4b2-6267-11e7-94e1-1080cda1e950.png)
+
+
+## Authors
+
+* Grady Shelton
+* Monique St. Laurent
+
+### Technologies Used
+
+* Ruby
+* Rails
+* Bundler
+* Postgres
+* RSpec
+* Javascript (ES6)
+* Jquery 3
+* HTML5
+* SASS
+* FactoryGirl
+* devise
+* SimpleCov
+
+## License
+
+MIT License
+
+Copyright (c) 2017 Grady Shelton and Monique St. Laurent
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
