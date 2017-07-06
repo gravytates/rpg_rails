@@ -23,6 +23,8 @@
 <% end %>
 <br>
 
+<h3>Inventory of Items</h3>
+
 <% if @user_items.any? %>
   <% @user_items.each do |item| %>
     <p> <%= item.name %></p>

@@ -6,7 +6,7 @@ class UserItemsController < ApplicationController
     # @user.user_items.push(@item)
     @user.save
     session[:user_id] = @user.id
-    redirect_to items_path
+    redirect_to user_path(current_user)
   end
 
   private

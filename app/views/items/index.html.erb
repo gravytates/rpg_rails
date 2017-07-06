@@ -1,3 +1,5 @@
+<h3>Items accross the Galaxy</h3>
+
 <% @items.each do |item| %>
  <p><%= item.name %>
    <%= form_for @user_item do |f| %>
@@ -6,3 +8,5 @@
    <% end %>
 </p>
 <% end %>
+
+<%= link_to "Character Page", user_path(current_user) %>
