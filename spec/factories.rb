@@ -2,12 +2,24 @@ FactoryGirl.define do
   factory(:user) do
     role('Bounty Hunter')
     name('Rick')
-    admin(false)
+    admin(true)
     avatar(nil)
     attack_level(0)
     email('Rick@Rick')
     password 123456
   end
+
+  factory :admin_user, class: 'User' do
+    role('Bounty Hunter')
+    name('Rick')
+    admin(true)
+    avatar(nil)
+    attack_level(0)
+    email('Rick@Rick')
+    password 123456
+  end
+
+
 
   factory(:item) do
     name('sword')

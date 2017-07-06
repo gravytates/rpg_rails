@@ -16,6 +16,19 @@
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/Guest/Desktop/rpg_rails/spec/rails_helper.rb": [
@@ -776,6 +789,18 @@
         1,
         1,
         1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
         null,
         null
       ],
@@ -800,6 +825,6 @@
         null
       ]
     },
-    "timestamp": 1499366479
+    "timestamp": 1499372008
   }
 }
