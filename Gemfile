@@ -33,6 +33,8 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'paperclip', '~> 4.1'
 gem 'rubocop', '~> 0.49.1', require: false
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

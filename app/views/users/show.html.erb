@@ -12,12 +12,13 @@
 
 <% if current_user.avatar.exists? %>
 <%= image_tag "#{current_user.avatar}" %>
+<br>
+<%= link_to "Delete Avatar", :sort_by => 'delete' %>
 <% else %>
   <p>No avatar image uploaded.</p>
 <% end %>
 <br>
 
-<%= link_to "Delete Avatar", :sort_by => 'delete' %>
 <br>
 
 <%= link_to "View All Items", items_path %>
@@ -32,10 +33,13 @@
 
 <% if @user_items.any? %>
   <% @user_items.each do |item| %>
-    <h4> <%= item.name %></h4>
-    <p> Attack Level Increase: <%= item.user_attack_increase %></p>
-    <p> One Time Attack (consumes item): <%= item.one_time_attack %></p>
-    <hr>
+    <div class="well">
+
+      <h4> <%= item.name %></h4>
+      <p> Attack Level Increase: <%= item.user_attack_increase %></p>
+      <p> One Time Attack (consumes item): <%= item.one_time_attack %></p>
+      <hr>
+    </div>
   <% end %>
 <% else %>
   <p>
